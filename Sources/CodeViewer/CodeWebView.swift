@@ -31,7 +31,7 @@ private struct JavascriptFunction {
     }
 }
 
-public class CodeWebView: CustomView {
+open class CodeWebView: CustomView {
     
     public enum Theme: String {
         
