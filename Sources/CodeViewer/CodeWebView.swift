@@ -31,7 +31,7 @@ private struct JavascriptFunction {
     }
 }
 
-public class CodeWebView: CustomView {
+open class CodeWebView: CustomView {
     
     public enum Theme: String {
         
@@ -325,7 +325,7 @@ public class CodeWebView: CustomView {
 }
 
 extension CodeWebView {
-    open func initWebView() {
+    private func initWebView() {
         webview.translatesAutoresizingMaskIntoConstraints = false
         addSubview(webview)
         webview.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
